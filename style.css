@@ -1,0 +1,307 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Montserrat, sans-serif;
+}
+
+.hero {
+	height: 100vh;
+	width: 100%;
+	background-image: url(resource/sky.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	overflow-x: hidden;
+}
+
+.caption {
+	color: #000000;
+	letter-spacing: .50px;
+	font-size: 75px;
+	cursor: default;
+	animation-name: LtoR;
+	animation-duration: 5s;
+	text-align: center;
+	margin-top: 4.5%;
+	text-shadow: 0 0 2px #111;
+	font-weight: 900;
+	font-variant: small-caps;
+	font-family: futura;
+	font-style: italic;
+	animation: colorchange 20s infinite alternate;
+	-webkit-animation: colorchange 20s infinite alternate;
+}
+
+@keyframes colorchange {
+	0% {
+		color: dodgerblue;
+	}
+
+	10% {
+		color: #8e44ad;
+	}
+
+	20% {
+		color: #1abc9c;
+	}
+
+	30% {
+		color: #d35400;
+	}
+
+	40% {
+		color: #2980b9;
+	}
+
+	50% {
+		color: #34495e;
+	}
+
+	60% {
+		color: blue;
+	}
+
+	70% {
+		color: #2980b9;
+	}
+	80% {
+		color: #f1c40f;
+	}
+
+	90% {
+		color: #2980b9;
+	}
+
+	100% {
+		color: pink;
+	}
+}
+
+@keyframes LtoR {
+	0% {
+		opacity: 0;
+		transform: translateX(-10rem);
+	}
+	80% {
+		opacity: 0.7;
+		transform: translateX(1rem);
+	}
+	100% {
+		opacity: 1;
+	}
+}
+#brand {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	font-size: 25px;
+	color: white;
+	padding: 5px;
+}
+
+#linker {
+	margin: 0 45%;
+	text-decoration: none;
+	font-size: large;
+}
+
+.highway {
+	height: 200px;
+	width: 1500%;
+	display: block;
+	background-image: url(resource/road.jpg);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	background-repeat: repeat-x;
+	animation: highway 10s linear infinite;
+}
+.leftcornericons {
+	position: fixed;
+	bottom: 0%;
+	left: 0%;
+	display: inline-block;
+	word-spacing: 10px;
+	animation-play-state: paused;
+}
+
+@keyframes highway {
+	100% {
+		transform: translateX(-3400px);
+	}
+}
+
+.city {
+	height: 250px;
+	width: 500%;
+	display: block;
+	background-image: url(resource/city.png);
+	position: absolute;
+	bottom: 200px;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	background-repeat: repeat-x;
+	animation: city 20s linear infinite;
+}
+
+@keyframes city {
+	100% {
+		transform: translateX(-1400px);
+	}
+}
+
+.car {
+	width: 300px;
+	left: 50%;
+	bottom: 120px;
+	transform: translateX(-50%);
+	position: absolute;
+	z-index: 2;
+}
+
+.car img {
+	width: 100%;
+	animation: car 5s linear;
+}
+
+@keyframes car {
+	0% {
+		transform: translateY(-1px);
+	}
+
+	50% {
+		transform: translateY(1px);
+	}
+
+	100% {
+		transform: translateY(-1px);
+	}
+}
+
+.wheel {
+	left: 49%;
+	bottom: 184px;
+	transform: translateX(-50%);
+	position: absolute;
+	z-index: 2;
+}
+
+.wheel img {
+	width: 57px;
+	height: 57px;
+	animation: wheel 1.5s linear infinite;
+}
+
+.back-wheel {
+	left: -121px;
+	position: absolute;
+}
+
+.front-wheel {
+	left: 63px;
+	position: absolute;
+}
+
+@keyframes wheel {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.car2 {
+	width: 340px;
+	left: 90%;
+	bottom: 35px;
+	transform: translateX(-50%);
+	position: absolute;
+	z-index: 2;
+}
+
+.car2 img {
+	width: 100%;
+	animation: car2 20s linear infinite;
+}
+
+.wheel2 {
+	left: 90%;
+	bottom: 100px;
+	transform: translateX(-150%);
+	position: absolute;
+	z-index: 2;
+	animation: car2 20s linear infinite;
+}
+
+.wheel2 img {
+	width: 40px;
+	height: 40px;
+	animation: wheel 0.8s linear infinite;
+}
+
+.back-wheel2 {
+	left: -114px;
+	position: absolute;
+}
+
+.front-wheel2 {
+	left: 51px;
+	bottom: -44px;
+	position: absolute;
+}
+
+@keyframes car2 {
+	0% {
+		transform: translateX(-1200px);
+	}
+
+	100% {
+		transform: translateX(100px);
+	}
+}
+
+@media all and (min-width: 768px) {
+	.highway {
+		width: 500%;
+	}
+
+	.wheel {
+		left: 49%;
+		bottom: 184px;
+		transform: translateX(-50%);
+		position: absolute;
+		z-index: 2;
+	}
+
+	.wheel img {
+		width: 57px;
+		height: 57px;
+	}
+
+	.back-wheel {
+		left: -112px;
+	}
+
+	.front-wheel {
+		left: 71px;
+	}
+
+	.wheel2 {
+		bottom: 100px;
+	}
+
+	.wheel2 img {
+		width: 40px;
+		height: 40px;
+	}
+
+	.back-wheel2 {
+		left: -114px;
+	}
+
+	.front-wheel2 {
+		left: 51px;
+		bottom: -44px;
+	}
+}

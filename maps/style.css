@@ -1,0 +1,235 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #343f40;
+	font-size: x-small;
+}
+.navbar {
+	border-bottom: 2px solid white;
+}
+.navbar .brand{
+	cursor:pointer;
+	border:none;
+	border-color:#e5e5cc;
+	position:relative;
+	font-size:25px;
+	right:15px;
+	top:0px;
+	padding:8px;
+	color:dodgerblue;
+	-webkit-animation:colorchange 20s infinite alternate;
+    }
+
+    @-webkit-keyframes colorchange {
+      0% {
+        
+        color: dodgerblue;
+      }
+      
+      10% {
+        
+        color: #b366ff;
+      }
+      
+      20% {
+        
+        color: #6666ff;
+      }
+      
+      30% {
+        
+        color: #d35400;
+      }
+      
+      40% {
+        
+        color: #2980b9;
+      }
+      
+      50% {
+        
+        color: #80ff80;
+      }
+      
+      60% {
+        
+        color: blue;
+      }
+      
+      70% {
+        
+        color: #ff99cc;
+      }
+      80% {
+     
+        color: #f1c40f;
+      }
+      
+      90% {
+     
+        color: #2980b9;
+      }
+      
+      100% {
+        
+        color: pink;
+      }
+    }
+}
+
+.text-input p {
+	color: white;
+}
+#current-location {
+	height: 40px;
+	cursor: pointer;
+	margin-right: 30px;
+	background-color: #b3b3ff;
+	font-family: Roboto;
+	font-size: 13px;
+	color:black;
+	font-weight: 300;
+	padding: 0 9px 0 9px;
+	text-overflow: ellipsis;
+	width: 100px;
+	border: 2px solid black;
+}
+#current-location:hover{
+	opacity:0.5;
+	cursor: pointer;
+	box-shadow: 2px black;
+}
+.navbar h2 {
+	margin: 10px auto;
+	color: white;
+	font-size: 1.3em;
+	margin-left: 40px;
+}
+.main-container {
+	display: flex;
+}
+#sidebar {
+	display: none;
+	width: 30vw;
+}
+.mode {
+	padding: 15px;
+	border-bottom: 1px solid black;
+	background-color: #343f40;
+	color: white;
+}
+.name-icon i{
+	color:#ffff00;
+}
+.name-icon h2{
+	color:#ffa31a;
+}
+#dist-display{
+	color:#ffff00;
+}
+.name-icon,
+.price-time-container {
+	display: flex;
+	justify-content: space-around;
+}
+.price-time-container {
+	font-size: 16px;
+}
+
+.name-icon i:hover {
+	cursor: pointer;
+	opacity:0.3;
+}
+
+.caution{
+	color: white;
+	font-size: 14px;
+	padding: 0 15px;
+	text-align: center;
+	border-bottom: 1px white; 
+}
+.fa-quote-left,.fa-quote-right{
+	color: #ff66ff;
+}
+#suggestionbtn {
+	margin: 20px auto;
+	padding: 5px;
+	margin-left: 10vw;
+}
+#suggestionbtn:hover {
+	cursor: pointer;
+	box-shadow: 2px black;
+}
+
+#map {
+	height: 80vh;
+	width: 100vw;
+	border: 7px solid #e6ffff;
+	border-width: thin;
+}
+.styled-table {
+	border-collapse: collapse;
+	margin: 25px auto;
+	font-family: sans-serif;
+	min-width: 400px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	font-size: 18px;
+}
+.styled-table thead tr {
+	background-color: #2b7ead;
+	color: #ffffff;
+}
+.styled-table th,
+.styled-table td {
+	padding: 12px 15px;
+	text-align: center;
+}
+.styled-table tbody tr {
+	border-bottom: 1px solid #2b7ead;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+	background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+	border-bottom: 2px solid #2b7ead;
+}
+
+.controls {
+	margin-top: 0px;
+	padding: 24px;
+	width: 50px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	height: 42px;
+	outline: none;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+	margin-bottom: 24px;
+}
+.text-input {
+	display: flex;
+	margin-left: 10%;
+	margin-top: 25px;
+}
+
+#origin-input,
+#destination-input {
+	background-color: #fff;
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 300;
+	margin-left: 12px;
+	padding: 0 11px 0 13px;
+	text-overflow: ellipsis;
+	width: 230px;
+	border: 2px solid black;
+}
+
+#origin-input:focus,
+#destination-input:focus {
+	border-color: #4d90fe;
+}
